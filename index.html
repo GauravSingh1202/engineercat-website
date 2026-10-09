@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff3dc">
+  <meta name="description" content="Engineer Cat — robotics, automation, electronics and engineering projects. Work in progress!">
+  <title>Engineer Cat — Work in Progress</title>
+
+  <style>
+    :root {
+      --ink: #24232d;
+      --paper: #fff8e9;
+      --orange: #f5a623;
+      --cream: #fff0cf;
+      --blue: #b8dcf5;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: "Trebuchet MS", system-ui, sans-serif;
+      background-image: radial-gradient(#e8d7b8 0.7px, transparent 0.7px);
+      background-size: 12px 12px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 20px clamp(18px, 5vw, 64px);
+      border-bottom: 3px solid var(--ink);
+      background: var(--blue);
+    }
+
+    .brand {
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      font-weight: 900;
+      letter-spacing: -1px;
+    }
+
+    .brand span { color: #b96a12; }
+
+    .tagline {
+      margin: 5px 0 0;
+      font-size: 0.75rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    main {
+      width: min(1100px, 92%);
+      margin: 38px auto;
+    }
+
+    .comic-panel {
+      overflow: hidden;
+      border: 4px solid var(--ink);
+      border-radius: 8px;
+      background: var(--cream);
+      box-shadow: 9px 9px 0 var(--ink);
+      transform: rotate(-0.3deg);
+    }
+
+    .art {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-bottom: 4px solid var(--ink);
+    }
+
+    .caption {
+      padding: clamp(24px, 5vw, 54px) 20px;
+      text-align: center;
+      background: #fff8e9;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 7px 14px;
+      background: var(--orange);
+      border: 2px solid var(--ink);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      transform: rotate(-2deg);
+    }
+
+    h1 {
+      margin: 22px 0 12px;
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      line-height: 1;
+      letter-spacing: -3px;
+      text-shadow: 3px 3px 0 #f5c36b;
+    }
+
+    .intro {
+      max-width: 540px;
+      margin: 0 auto;
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      line-height: 1.8;
+    }
+
+    .status {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 20px;
+      border: 3px solid var(--ink);
+      background: #f8c45d;
+      font-weight: 900;
+      box-shadow: 4px 4px 0 var(--ink);
+    }
+
+    .status::before { content: "✦ "; }
+    .status::after { content: " ✦"; }
+
+    .footer {
+      padding: 28px 12px 36px;
+      text-align: center;
+      font-size: 0.85rem;
+      line-height: 1.8;
+    }
+
+    .paw { font-size: 1.3rem; }
+
+    @media (max-width: 600px) {
+      header { align-items: flex-start; flex-direction: column; }
+      main { margin: 24px auto; }
+      .comic-panel { box-shadow: 5px 5px 0 var(--ink); }
+      h1 { letter-spacing: -1px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div>
+      <div class="brand">Engineer <span>Cat</span> ฅ</div>
+      <p class="tagline">ROBOTICS / AUTOMATION / TECH</p>
+    </div>
+    <div aria-label="Website status">● Building something!</div>
+  </header>
+
+  <main>
+    <section class="comic-panel">
+      <img
+        class="art"
+        src="engineer-cat-manga.png"
+        alt="Engineer Cat in a manga-inspired engineering workshop"
+      >
+
+      <div class="caption">
+        <div class="eyebrow">A NEW ADVENTURE IS LOADING</div>
+        <h1>Engineer Cat!</h1>
+        <p class="intro">
+          Welcome to my little corner of the internet.
+          I'm building something exciting here.
+          <br>
+          Stay curious, keep tinkering, and check back soon!
+        </p>
+        <div class="status">WORK IN PROGRESS</div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="paw">🐾 ⚙️ 💻 🐾</div>
+      <strong>Eat. Code. Build. Learn. Repeat.</strong>
+      <br>
+      Made with curiosity and a little bit of meow.
+    </footer>
+  </main>
+</body>
+</html>
